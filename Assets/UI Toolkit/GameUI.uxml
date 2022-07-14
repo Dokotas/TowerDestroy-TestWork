@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/style.uss?fileID=7433441132597879392&amp;guid=840ccfa75bed6b240bd8d09b76dfcf17&amp;type=3#style" />
+    <ui:VisualElement name="GameMenu" class="window">
+        <ui:VisualElement name="TopRow" class="top-row">
+            <ui:VisualElement name="PlayerHealthBar" class="health-bar">
+                <ui:VisualElement name="PlayerHealthBarFill" class="health-bar-fill" />
+            </ui:VisualElement>
+            <ui:Button display-tooltip-when-elided="true" name="PauseButton" class="button" style="width: 100px; height: 100px; background-image: url(&apos;project://database/Assets/Sprites/Icons/Pause.png?fileID=2800000&amp;guid=110df380bbf11d848a426c816db787cc&amp;type=3#Pause&apos;);" />
+            <ui:VisualElement name="EnemyHealthBar" class="health-bar">
+                <ui:VisualElement name="EnemyHealthBarFill" class="health-bar-fill" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ShieldContainer" class="shield-container">
+            <ui:Label text="0:15" name="ShieldTimer" class="shield-timer"/>
+            <ui:VisualElement name="UnableShield" class="unable-shield"/>
+            <ui:Button display-tooltip-when-elided="true" name="ShieldButton" class="button" style="width: 150px; height: 150px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="PauseMenu" class="window">
+        <ui:VisualElement name="panel" class="panel">
+            <ui:Label text="Pause" display-tooltip-when-elided="true" name="PauseTitle" class="h" />
+            <ui:Button text="Restart" display-tooltip-when-elided="true" name="PauseRestartButton" class="text-button"/>
+            <ui:Button text="Resume" display-tooltip-when-elided="true" name="ResumeButton" class="text-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="EndMenu" class="window">
+        <ui:VisualElement name="panel" class="panel">
+            <ui:Label text="You loose" display-tooltip-when-elided="true" name="EndTitle" class="h" />
+            <ui:Button text="Restart" display-tooltip-when-elided="true" name="EndRestartButton" class="text-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
